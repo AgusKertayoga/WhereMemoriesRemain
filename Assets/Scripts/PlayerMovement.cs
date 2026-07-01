@@ -20,8 +20,13 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
 
         if (move > 0)
+        {
+            GameEventMonoBehaviour.LogEvent("Pergerakan", "Player");
             sr.flipX = false;
+        }
         else if (move < 0)
+        {
             sr.flipX = true;
+        }
     }
 }

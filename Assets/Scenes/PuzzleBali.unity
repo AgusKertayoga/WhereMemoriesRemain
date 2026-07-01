@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabcd49260b500e4e91e1f0d40159caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameEventMonoBehaviour
-  fileName: player_event_counter.csv
+  fileName: mouse_input.csv
 --- !u!1 &1745511442
 GameObject:
   m_ObjectHideFlags: 0
