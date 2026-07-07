@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
@@ -216,6 +217,8 @@ namespace Assets.Scripts
                 lastSentence = true;
 
                 endDialogueEvent.Invoke();
+
+                SceneManager.LoadScene("PuzzleBali");
 
                 return;
             }
