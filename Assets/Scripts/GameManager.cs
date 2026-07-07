@@ -242,7 +242,7 @@ public class GameManager : MonoBehaviour
             piecesCorrect++;
             if (piecesCorrect == pieces.Count)
             {
-                SceneManager.LoadScene("Memory Java");
+                SceneManager.LoadScene("Java");
             }
         }
     }
