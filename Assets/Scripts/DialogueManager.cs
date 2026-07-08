@@ -209,20 +209,7 @@ namespace Assets.Scripts
 
             nextSentenceDialogueEvent.Invoke();
 
-            //If last sentence stop dialogue and return
-            if (currentSentence > sentences.Count - 1)
-            {
-                StopDialogue();
-
-                lastSentence = true;
-
-                endDialogueEvent.Invoke();
-
-                SceneManager.LoadScene("PuzzleBali");
-
-                return;
-            }
-
+           
             //If not last sentence continue...
             lastSentence = false;
 
@@ -319,4 +306,6 @@ namespace Assets.Scripts
 
         public UnityEvent sentenceEvent;
     }
+
+
 }

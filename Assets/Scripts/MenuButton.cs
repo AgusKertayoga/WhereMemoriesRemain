@@ -5,7 +5,7 @@ public class MenuButton : MonoBehaviour
    public void OnClickStart()
     {
         // Load the scene with build index 1
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Bali");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Opening");
     }
     public void OnClickGallery()
     {
