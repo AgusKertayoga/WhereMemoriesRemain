@@ -2,7 +2,7 @@
 - Project name: WhereMemoriesRemain
 - Unity version: Unity 6000.3.14f1
 - Active game object:
-  - Name: Gallery
+  - Name: START
   - Tag: Untagged
   - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

@@ -242,7 +242,7 @@ public class GameManager : MonoBehaviour
             piecesCorrect++;
             if (piecesCorrect == pieces.Count)
             {
-                SceneManager.LoadScene("Java");
+                SceneManager.LoadScene("CutsceneBali");
             }
         }
     }
