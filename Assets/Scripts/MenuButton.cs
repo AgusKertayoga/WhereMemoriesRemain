@@ -10,7 +10,7 @@ public class MenuButton : MonoBehaviour
     public void OnClickGallery()
     {
         // Load the scene with build index 2
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Gallery");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Gale ");
     }
 
     public void OnClickMenu()
