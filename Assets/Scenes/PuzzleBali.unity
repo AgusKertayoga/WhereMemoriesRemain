@@ -265,13 +265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7afbae548a7fa439f3981981991f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  difficulty: 4
+  difficulty: 2
   gameHolder: {fileID: 835138791214888135, guid: adac189053bb2054aa8465e2208603e1, type: 3}
   piecePrefab: {fileID: 176729844931507890, guid: 45b8d682b16534541afbe7c9bc8a7295, type: 3}
-  puzzleScale: 3
+  puzzleScale: 3.42
   imageTextures:
   - {fileID: 2800000, guid: c0a57411d0afcf841851420f59472681, type: 3}
-  - {fileID: 2800000, guid: 91b1748b82a77a446abb9422df29a142, type: 3}
   levelSelectPanel: {fileID: 2004525036}
   levelSelectPrefab: {fileID: 1978379877648479393, guid: adac189053bb2054aa8465e2208603e1, type: 3}
   playAgainButton: {fileID: 0}
