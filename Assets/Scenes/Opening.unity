@@ -978,11 +978,11 @@ PrefabInstance:
       objectReference: {fileID: 848546289}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -990,11 +990,11 @@ PrefabInstance:
       objectReference: {fileID: 11500000, guid: 3d41f3822a2a9704b9ed8116da54f5e3, type: 3}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentenceEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1009,9 +1009,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEditor.MonoScript, UnityEditor.CoreModule
       objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1838822164}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
@@ -1025,13 +1037,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDialogueEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Assets.Scripts.LoadSceneOnDialogueEnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6011988201399623206, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1838822164}
   m_SourcePrefab: {fileID: 100100000, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
 --- !u!1 &1831897002
 GameObject:
@@ -1139,6 +1170,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.DialogueCharacter
   characterPhoto: {fileID: 3288746546897001931, guid: 5fcb2e085bd6e43d393ba639358a1204, type: 3}
   characterName: Dokter
+--- !u!1 &1838822163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6011988201399623206, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+  m_PrefabInstance: {fileID: 1786220506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838822164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838822163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9ac07edf9d73d49a19164c9a46fb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.LoadSceneOnDialogueEnd
+  sceneName: Bali
+  delaySeconds: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

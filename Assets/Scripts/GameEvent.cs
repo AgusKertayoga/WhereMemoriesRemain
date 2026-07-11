@@ -23,10 +23,26 @@ public class GameEventMonoBehaviour : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            filePath = Path.Combine("C:/Users/Yun/OneDrive/Dokumen/GitHub/WhereMemoriesRemain/Report", fileName);
+            // Use a platform-independent, writable folder for reports.
+            // In the Editor use the project's Assets/Report folder; in builds use persistentDataPath.
+#if UNITY_EDITOR
+            string reportDir = Path.Combine(Application.dataPath, "Report");
+#else
+            string reportDir = Path.Combine(Application.persistentDataPath, "Report");
+#endif
+            // Ensure the directory exists
+            try
+            {
+                Directory.CreateDirectory(reportDir);
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning($"Failed to create report directory '{reportDir}': {ex.Message}");
+            }
 
-            Debug.Log("CSV created at the end");
-            Debug.Log("CSV location: " + filePath);
+            filePath = Path.Combine(reportDir, fileName);
+
+            Debug.Log("CSV will be written to: " + filePath);
         }
         else
         {
